@@ -15,10 +15,30 @@ myvar = 34
 stringvar = "my string"
 stringvar = 55
 
-# Python has type annotations but they still don't hold you from ignoring it.
+# Python has type hints.
+# They don't hold you from reassigning a value of completely different type.
 stringvar: str = "1 string"
 stringvar = 666
 
-# Constants can be a handy tool to reference an often used value, that you know will not change.
-# Python does not have constants.
+# But they are useful with linters.
+# Linters are programs that scan your source code
+# and warn you about your mistakes.
+# On such program would be pylint for example.
+# Available via pip or many Linux package managers.
+# run in terminal: pip install pylint
+#
+# pylint will detect many things as wrong in this tutorial,
+# because so far this is only for explanation.
+# I will demonstrate a proper pylint-approved file later.
 
+# Constants can be a handy tool to reference an often used value,
+# that you know will not change.
+# Python technically also does not have constants.
+#
+# However the consensus seems to be that if a variable is defined outside of
+# any funtion it is a constant and constants should have upper case names.
+
+MY_CONST = 43 # ok
+my_var = "hi" # bad
+
+# Functions will be explained later.

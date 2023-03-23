@@ -7,6 +7,5 @@ def my_func():
 	print(a == 3)
 
 # The variable 'a' is not accessable from out here.
-# This script fails here.
+# This script fails here, saying that 'a' is not defined.
 print(a)
-

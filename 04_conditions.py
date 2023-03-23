@@ -1,7 +1,7 @@
 # Conditions are a useful tool to control the flow of the script.
 # Every script runs from top to bottom.
 
-# Boring, let's change that.
+# Thats boring, let's change that.
 
 num = 1
 
@@ -45,4 +45,3 @@ if (2 != 2 or 4 > 5):
 	print("Oh god it looks bad.")
 else:
 	print("Yup, all right.")
-
